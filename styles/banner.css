@@ -1,0 +1,100 @@
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1439px) {
+  .banner__content {
+    width: 850px;
+  }
+}
+.banner__title {
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+.banner__title--first-line {
+  animation: slide-right 0.8s linear forwards;
+  transform: translateX(-300%);
+  font-size: 3.5rem;
+}
+@media screen and (min-width: 760px) {
+  .banner__title--first-line {
+    font-size: 5.25rem;
+  }
+}
+@media screen and (min-width: 1439px) {
+  .banner__title--first-line {
+    font-size: 7.25rem;
+  }
+}
+.banner__title--second-line {
+  font-size: 2rem;
+  color: var(--black);
+  background-color: var(--white);
+  animation: slide-right 0.8s 0.4s linear forwards;
+  transform: translateX(-300%);
+  text-align: center;
+  padding: 0 1rem;
+}
+@media screen and (min-width: 767px) {
+  .banner__title--second-line {
+    font-size: 3.25rem;
+  }
+}
+@media screen and (min-width: 1439px) {
+  .banner__title--second-line {
+    font-size: 4.5rem;
+  }
+}
+.banner__title--third-line {
+  animation: slide-right 0.8s 0.8s linear forwards;
+  transform: translateX(-300%);
+  font-size: 1.75rem;
+}
+@media screen and (min-width: 767px) {
+  .banner__title--third-line {
+    font-size: 2.75rem;
+  }
+}
+@media screen and (min-width: 1439px) {
+  .banner__title--third-line {
+    font-size: 3.75rem;
+  }
+}
+.banner__title span {
+  display: block;
+  text-align: center;
+}
+.banner__description {
+  color: var(--lightgray);
+  display: block;
+  margin-top: 1rem;
+  line-height: 1.6;
+  transform: translateX(-300%);
+  animation: slide-right 0.8s 1.2s linear forwards;
+  text-align: justify;
+}
+@media screen and (min-width: 767px) {
+  .banner__description {
+    width: 550px;
+  }
+}
+@media screen and (min-width: 1439px) {
+  .banner__description {
+    width: auto;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-300%) scale(0);
+  }
+  50% {
+    transform: translateX(-100%) scale(0.25);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
