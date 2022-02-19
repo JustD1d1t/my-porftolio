@@ -1,0 +1,39 @@
+textarea {
+  resize: none;
+}
+
+button[type="submit"] {
+  padding: 0.5rem 1rem;
+  background: var(--black);
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid var(--white);
+  color: var(--white);
+  transition: box-shadow 0.3s ease-in-out;
+  margin: 1rem 0 0 auto;
+}
+button[type="submit"]:hover {
+  box-shadow: 0px 0px 14px 0px var(--lightgray);
+}
+textarea,
+input {
+  color: var(--black);
+  padding: 0 0.5rem;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+.field label {
+  margin-bottom: 0.25rem;
+  color: var(--white);
+}
+.field input::placeholder,
+textarea::placeholder {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--gray);
+}

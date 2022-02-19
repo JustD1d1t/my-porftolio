@@ -1,0 +1,20 @@
+.contact__introduction {
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+}
+.contact__form-container {
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 2rem auto;
+  box-shadow: 0px 0px 14px 0px var(--lightgray);
+}
+@media screen and (min-width: 1023px) {
+  .contact__form-container {
+    width: 600px;
+  }
+}

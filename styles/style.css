@@ -8,7 +8,6 @@ html {
 }
 :root {
   --black: #000;
-  /* --darkgray: #2e2e2e; */
   --darkgray: #1d1d1d;
   --gray: #5a5a5a;
   --lightgray: #d3d3d3;
@@ -24,7 +23,9 @@ h3,
 h4,
 h5,
 h6,
-li {
+li,
+textarea,
+input {
   font-family: "Roboto", sans-serif;
   color: var(--white);
 }

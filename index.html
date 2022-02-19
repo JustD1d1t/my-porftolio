@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./styles/about.css" />
     <link rel="stylesheet" href="./styles/skills.css" />
     <link rel="stylesheet" href="./styles/projects.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fira+Sans:wght@300;400;500&family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap");
     </style>
@@ -207,10 +209,18 @@
                       media="(min-width: 1439px)"
                     />
                     <source
-                      srcset="./img/projects/scooters.png"
+                      srcset="./img/projects/scooters-1400.png"
+                      media="(min-width: 1023px)"
+                    />
+                    <source
+                      srcset="./img/projects/scooters-1000.png"
                       media="(min-width: 767px)"
                     />
-                    <img src="./img/projects/scooters-mobile.png" alt="" />
+                    <source
+                      srcset="./img/projects/scooters-700.png"
+                      media="(min-width: 450px)"
+                    />
+                    <img src="./img/projects/scooters-400.png" alt="" />
                   </picture>
                 </div>
                 <div class="project__details">
@@ -254,7 +264,7 @@
                     </div>
                     <div class="project__link">
                       <a
-                        href="https://justd1d1t.github.io/ScootersStock-react-mern/#/ScootersStock-react-mern/scooters"
+                        href="https://justd1d1t.github.io/ScootersStock-react-mern/#/ScootersStock-react-mern/"
                         class="project__link-background"
                       >
                         <img src="./svg/website.svg" alt="" />
@@ -272,13 +282,18 @@
                       media="(min-width: 1439px)"
                     />
                     <source
-                      srcset="./img/projects/PetsAdoptAndCare.png"
+                      srcset="./img/projects/PetsAdoptAndCare-1400.png"
+                      media="(min-width: 1023px)"
+                    />
+                    <source
+                      srcset="./img/projects/PetsAdoptAndCare-1000.png"
                       media="(min-width: 767px)"
                     />
-                    <img
-                      src="./img/projects/PetsAdoptAndCare-mobile.png"
-                      alt=""
+                    <source
+                      srcset="./img/projects/PetsAdoptAndCare-700.png"
+                      media="(min-width: 450px)"
                     />
+                    <img src="./img/projects/PetsAdoptAndCare-400.png" alt="" />
                   </picture>
                 </div>
                 <div class="project__details">
@@ -334,10 +349,18 @@
                       media="(min-width: 1439px)"
                     />
                     <source
-                      srcset="./img/projects/restaurant.png"
-                      media="(min-width: 1439px)"
+                      srcset="./img/projects/restaurant-1400.png"
+                      media="(min-width: 1023px)"
                     />
-                    <img src="./img/projects/restaurant-mobile.png" alt="" />
+                    <source
+                      srcset="./img/projects/restaurant-1000.png"
+                      media="(min-width: 767px)"
+                    />
+                    <source
+                      srcset="./img/projects/restaurant-700.png"
+                      media="(min-width: 450px)"
+                    />
+                    <img src="./img/projects/restaurant-400.png" alt="" />
                   </picture>
                 </div>
                 <div class="project__details">
@@ -388,10 +411,18 @@
                 <div class="project__image project__image--cover">
                   <picture>
                     <source
-                      srcset="./img/projects/battleship.png"
-                      media="(min-width: 1439px)"
+                      srcset="./img/projects/battleship-1400.png"
+                      media="(min-width: 1023px)"
                     />
-                    <img src="./img/projects/battleship-mobile.png" alt="" />
+                    <source
+                      srcset="./img/projects/battleship-1000.png"
+                      media="(min-width: 767px)"
+                    />
+                    <source
+                      srcset="./img/projects/battleship-700.png"
+                      media="(min-width: 450px)"
+                    />
+                    <img src="./img/projects/battleship-400.png" alt="" />
                   </picture>
                 </div>
                 <div class="project__details">
@@ -440,6 +471,51 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <h3 class="contact__introduction">
+            If you are insterested in my person contact me using contact form
+            below
+          </h3>
+          <div class="contact__form-container">
+            <form action="POST" class="contact__form">
+              <div class="field">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="E-mail" required />
+              </div>
+              <div class="field">
+                <label for="name">Imię i nazwisko</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Imię i nazwisko"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="company">Nazwa firmy</label>
+                <input
+                  type="text"
+                  id="company"
+                  placeholder="Nazwa firmy"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="question">Zapytanie</label>
+                <textarea
+                  name="question"
+                  id="question"
+                  rows="3"
+                  placeholder="Zapytanie"
+                ></textarea>
+              </div>
+              <button type="submit">Wyślij</button>
+            </form>
           </div>
         </div>
       </section>
