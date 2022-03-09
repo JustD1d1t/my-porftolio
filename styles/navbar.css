@@ -18,7 +18,8 @@
   position: absolute;
   height: calc(100vh);
   top: 100%;
-  left: 0;
+  left: -100vw;
+  transform: translateX(0);
   width: 100vw;
   background-color: var(--black);
   display: flex;
@@ -26,7 +27,10 @@
   align-items: center;
   padding: 8rem 0;
   justify-content: space-around;
-  display: none;
+  transition: transform 0.4s ease-in-out;
+}
+.navbar__links.active {
+  transform: translateX(100vw);
 }
 @media screen and (min-width: 1440px) {
   .navbar__links {
@@ -38,6 +42,8 @@
     height: auto;
     flex-direction: row;
     padding: 0;
+    display: flex;
+    transform: translateX(0);
   }
 }
 .navbar__hamburger {
