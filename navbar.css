@@ -18,9 +18,10 @@
   position: absolute;
   height: calc(100vh - var(--navbar-height));
   top: 100%;
-  left: -100vw;
+  left: -200px;
   transform: translateX(0);
   width: 100vw;
+  max-width: 200px;
   background-color: var(--black);
   font-size: 2rem;
   display: flex;
@@ -31,7 +32,7 @@
   transition: transform 0.4s ease-in-out;
 }
 .navbar__links.active {
-  transform: translateX(100vw);
+  transform: translateX(200px);
 }
 @media screen and (min-width: 1440px) {
   .navbar__links {
